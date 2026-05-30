@@ -2,7 +2,6 @@ flask
 flask-cors
 google-generativeai
 python-dotenv
-faiss-cpu
-sentence-transformers
-torch
+pypdf
+gunicorn
 numpy
