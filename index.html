@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HR Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🤖 AI HR Assistant
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>Ask HR Anything</h1>
+
+        <p>
+            Instant answers for leave policies, payroll,
+            employee benefits and company rules.
+        </p>
+
+    </section>
+
+    <section class="main-container">
+
+        <div class="chat-section">
+
+            <div class="chat-header">
+                HR Assistant Chat
+            </div>
+
+            <div class="chat-area" id="chatArea">
+
+                <div class="bot-message">
+                    👋 Hello! How can I help you today?
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask your HR question..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="features">
+
+            <div class="feature-card">
+                <h3>📄 Leave Policy</h3>
+                <p>Check leave eligibility and balances.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>💰 Payroll</h3>
+                <p>Get salary and payroll information.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎉 Holidays</h3>
+                <p>View company holidays and events.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🛡 Benefits</h3>
+                <p>Explore insurance and employee benefits.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
