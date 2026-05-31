@@ -52,6 +52,7 @@ try:
     pdf_text = " ".join(pdf_text.split())
 
     print("HR Policy PDF Loaded Successfully")
+    print("PDF Length =", len(pdf_text))
 
 except Exception as e:
 
@@ -103,11 +104,12 @@ Rules:
   Response:
   Source:
 - If information is unavailable say:
-  This information is not available in the HR Policy.
+  If information is partially available, provide the closest relevant HR information.
+Only say information is unavailable when no relevant information exists.
 
 HR POLICY:
 
-{pdf_text[:40000]}
+{pdf_text[:120000]}
 
 EMPLOYEE QUESTION:
 
